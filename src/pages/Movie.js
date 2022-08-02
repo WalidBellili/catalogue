@@ -13,19 +13,21 @@ const Movie = () => {
 
   return (
     <>
-      <img src={movie.image} alt={movie.title} />
-      <p>{movie.title}</p>
-      <p>{movie.director}</p>
-      <p>{movie.description}</p>
-      <br />
-      {movie.stars.map((star) => {
-        return (
-          <ul>
-            <li>{star}</li>
-          </ul>
-        );
-      })}
-      <button onClick={handleButtonClick}>Back to home</button>
+      <main>
+        <img src={movie.image} alt={movie.title} />
+        <p>{movie.title}</p>
+        <p>{movie.director}</p>
+        <p>{movie.description}</p>
+        <br />
+        {movie.stars.map((star) => {
+          return (
+            <ul>
+              <li>{star}</li>
+            </ul>
+          );
+        })}
+        <button onClick={handleButtonClick}>Back to home</button>
+      </main>
     </>
   );
 };
