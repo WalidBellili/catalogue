@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Movies from "../Movies.json";
 import { useNavigate } from "react-router-dom";
