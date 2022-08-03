@@ -8,19 +8,21 @@ const Movie = () => {
 
   return (
     <>
-      <main>
+      <main className="movie">
         <img src={movie.image} alt={movie.title} />
-        <p>{movie.title}</p>
-        <p>{movie.director}</p>
-        <p>{movie.description}</p>
-        <br />
-        {movie.stars.map((star) => {
-          return (
-            <ul>
-              <li>{star}</li>
-            </ul>
-          );
-        })}
+        <article className="paragraph">
+          <p>{movie.title}</p>
+          <p>{movie.director}</p>
+          <p>{movie.description}</p>
+          <br />
+          {movie.stars.map((star) => {
+            return (
+              <ul>
+                <li>{star}</li>
+              </ul>
+            );
+          })}
+        </article>
       </main>
     </>
   );

@@ -1,21 +1,32 @@
 body {
-  background: #000;
+  background: rgba(0, 0, 0, 0.811);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  text-align: center;
 }
-main {
+nav {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+img {
+  margin-top: 10px;
+}
+
+.movie {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 35%;
-}
-img {
-  width: 80%;
-  height: 300px;
-}
-p {
   color: whitesmoke;
+}
+.paragraph {
+  width: 60%;
 }
