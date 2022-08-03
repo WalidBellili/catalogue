@@ -1,15 +1,10 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Movies from "../Movies.json";
-import { useNavigate } from "react-router-dom";
 
 const Movie = () => {
   const params = useParams();
-  const [movie, setMovie] = useState(Movies[params.id - 1]);
-  const navigate = useNavigate();
-  const handleButtonClick = () => {
-    navigate("/");
-  };
+  const [movie] = useState(Movies[params.id - 1]);
 
   return (
     <>
@@ -26,7 +21,6 @@ const Movie = () => {
             </ul>
           );
         })}
-        <button onClick={handleButtonClick}>Back to home</button>
       </main>
     </>
   );

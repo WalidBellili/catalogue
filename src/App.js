@@ -5,16 +5,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Movie from "./pages/Movie";
 import NotFound from "./pages/NotFound";
+import BackHome from "./pages/BackHome";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movie/:id" element={<Movie />} />
-        <Route path="/*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <BackHome />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movie/:id" element={<Movie />} />
+          <Route path="/*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 };
 

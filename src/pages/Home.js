@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Movies from "../Movies.json";
 
 const Home = () => {
-  console.log(Movies);
   return (
     <>
       <ul>
