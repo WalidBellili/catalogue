@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <section>
         {Movies.map((movie) => (
-          <li key={movie.title}>
+          <li className="list" key={movie.title}>
             <Link to={`/movie/${movie.id}`}>{movie.title}</Link>
           </li>
         ))}

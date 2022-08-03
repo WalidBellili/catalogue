@@ -1,5 +1,7 @@
 body {
-  background: rgba(0, 0, 0, 0.811);
+  /* background: url(./notNetflix.jpg) no-repeat center/cover; */
+  background: black;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +18,7 @@ nav {
 ul {
   list-style: none;
 }
+
 img {
   margin-top: 10px;
 }
@@ -27,6 +30,7 @@ img {
   justify-content: center;
   color: whitesmoke;
 }
+
 .paragraph {
   width: 60%;
 }
