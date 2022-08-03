@@ -30,7 +30,9 @@ img {
   justify-content: center;
   color: whitesmoke;
 }
-
+a:link {
+  text-decoration: none;
+}
 .paragraph {
   width: 60%;
 }
